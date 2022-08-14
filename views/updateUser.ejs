@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Details</title>
+</head>
+<body>
+    <form action="/api/updateDetails" method="post">
+        <h2>Update Details for the User</h2>
+        <h3>Your Email ID: <b style="color: royalblue"><%= email %></b></h3>
+        <br><br>
+        <input type="hidden" name="email" value="<%= email %>">
+        <label for="fullname">Your Full Name: </label>
+        <input type="text" name="name" id="fullname">
+        <br><br>
+        <label for="password1">Password: </label>
+        <input type="password" name="pwd1" id="password1" placeholder="Min. 8 - digit password">
+        <br><br>
+        <label for="password2">Confirm Password: </label>
+        <input type="password" name="pwd2" id="password2" placeholder="Must be same as above">
+        <br><br>
+        <label for="ageField">Your Age: </label>
+        <input type="number" name="age" id="ageField">
+        <br><br>
+        <label for="compField">Your Company Name: </label>
+        <input type="text" name="company" id="compField">
+        <br><br>
+        <button type="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
